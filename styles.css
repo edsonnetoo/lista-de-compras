@@ -73,6 +73,10 @@ p {
     line-height: 19px;
 }
 
+.container-lista {
+    width: 100%;
+}
+
 .botao-item {
     text-align: center;
     padding: 12px 16px;
