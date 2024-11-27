@@ -14,6 +14,7 @@ function adicionarItem(evento) {
     containerItemLista.classList.add("item-lista-container");
 
     const containerNomeDoItem = document.createElement("div");
+    containerNomeDoItem.classList.add("container-nome-compra");
 
     // criando Checkbox
     const containerCheckbox = document.createElement("div");
