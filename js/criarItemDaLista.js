@@ -2,7 +2,7 @@ const listaComprados = document.getElementById("lista-comprados");
 let contador = 0;
 
 
-export function criarItemDaLIsta(item) {
+export function criarItemDaLIsta(item, listaDeCompras) {
     const itemDaLista = document.createElement("li");
     const containerItemLista = document.createElement("div");
     containerItemLista.classList.add("item-lista-container");

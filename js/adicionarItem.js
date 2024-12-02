@@ -8,6 +8,6 @@ const listaDeCompras = document.getElementById("lista-de-compras");
 export function adicionarItem(evento) {
     evento.preventDefault();
     
-    const itemDaLista = criarItemDaLIsta(item.value);
+    const itemDaLista = criarItemDaLIsta(item.value, listaDeCompras);
     listaDeCompras.appendChild(itemDaLista);
 }
