@@ -1,4 +1,5 @@
 import { criarItemDaLIsta } from "./criarItemDaLista.js";
+import { adicionarData } from "./adicionarData.js";
 import { verificarListaVazia } from "./verificarListaVazia.js";
 
 const item = document.getElementById("input-item");
@@ -11,5 +12,6 @@ export function adicionarItem(evento) {
     
     const itemDaLista = criarItemDaLIsta(item.value, listaDeCompras);
     listaDeCompras.appendChild(itemDaLista);
+    adicionarData(itemDaLista);
     verificarListaVazia(listaDeCompras);
 }
