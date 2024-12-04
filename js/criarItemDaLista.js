@@ -1,3 +1,5 @@
+import { verificarListaVaziaComprados } from "./verificarListaVazia.js";
+
 const listaComprados = document.getElementById("lista-comprados");
 let contador = 0;
 
@@ -31,10 +33,12 @@ export function criarItemDaLIsta(item, listaDeCompras) {
             checkboxCustomizado.classList.add("checked");
             itemTitulo.style.textDecoration = "line-through";
             listaComprados.appendChild(itemDaLista);
+            verificarListaVaziaComprados(listaComprados);
         } else {
             checkboxCustomizado.classList.remove("checked");
             itemTitulo.style.textDecoration = "none";
             listaDeCompras.appendChild(itemDaLista);
+            verificarListaVaziaComprados(listaComprados);
         }
     })
 
