@@ -12,9 +12,7 @@ export function verificarListaVazia(lista) {
 export function verificarListaVaziaComprados(lista) {
     if (lista.childElementCount === 0) {
         tituloListaComprados.style.display = "none";
-        console.log("vazio");
     } else {
         tituloListaComprados.style.display = "block";
-        console.log("Tem algo");
     }
 }
