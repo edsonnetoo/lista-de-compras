@@ -1,3 +1,5 @@
+import { adicionarData } from "./adicionarData.js";
+
 export const editarItem = (elemento) => {
     let novoItem = prompt("Digite o novo nome do item:");
 
@@ -5,6 +7,7 @@ export const editarItem = (elemento) => {
         const itemTextoAtualizado = elemento.querySelector("#item-titulo");
         itemTextoAtualizado.textContent = novoItem;
 
+        adicionarData(elemento);
         const estavaComprado = elemento.querySelector(".input-checkbox").checked;
 
         if (estavaComprado) {
@@ -12,5 +15,8 @@ export const editarItem = (elemento) => {
             elemento.querySelector(".checkbox-customizado").classList.add("checked");
             itemTextoAtualizado.style.textDecoration = "line-through";
         }
+        
+        
     }
+    
 }
