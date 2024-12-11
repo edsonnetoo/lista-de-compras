@@ -11,9 +11,15 @@ verificarListaVaziaComprados(listaComprados);
 
 export function adicionarItem(evento) {
     evento.preventDefault();
+
+    if (item.value === "") {
+        alert("Por favor, insira item!");
+        return;
+    }
     
     const itemDaLista = criarItemDaLIsta(item.value, listaDeCompras);
     listaDeCompras.appendChild(itemDaLista);
     adicionarData(itemDaLista);
     verificarListaVazia(listaDeCompras);
+    item.value = "";
 }
