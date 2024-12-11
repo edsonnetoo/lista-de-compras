@@ -12,8 +12,4 @@ export function adicionarData(item) {
         paragrafo.innerHTML = novaData;
 
     }
-
-    
-    
-    
 }

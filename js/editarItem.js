@@ -15,8 +15,6 @@ export const editarItem = (elemento) => {
             elemento.querySelector(".checkbox-customizado").classList.add("checked");
             itemTextoAtualizado.style.textDecoration = "line-through";
         }
-        
-        
     }
     
 }
