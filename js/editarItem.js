@@ -7,7 +7,13 @@ export const editarItem = (elemento) => {
         const itemTextoAtualizado = elemento.querySelector("#item-titulo");
         itemTextoAtualizado.textContent = novoItem;
 
-        adicionarData(elemento);
+        if (elemento.querySelector(".texto-data") === null) {
+            adicionarData(elemento);
+        } else {
+            elemento.querySelector(".texto-data").remove();
+            adicionarData(elemento);
+        }
+        
         const estavaComprado = elemento.querySelector(".input-checkbox").checked;
 
         if (estavaComprado) {
